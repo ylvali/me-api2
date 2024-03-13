@@ -1,0 +1,37 @@
+{
+    "name": "me-api",
+    "version": "1.0.0",
+    "description": "jsramverkBTH(course2019Completed2024)",
+    "main": "index.js",
+    "scripts": {
+        "pretest": "bash db/reset_test_db.bash",
+        "test": "nyc --reporter=html --reporter=text mocha 'test/**/*.js'",
+        "prestart": "export JWT_SECRET='R_[/_&g2Upsl5I3]uQ]K<2o|J'",
+        "start": "node app.js",
+        "eslint": "eslint .",
+        "clean": "rm -rf node_modules package-lock.json",
+        "process": "pm2 start app.js --name me-api",
+        "stopProcess": "pm2 stop app.js --name me-api",
+        "production": "NODE_ENV='production' node app.js"
+    },
+    "author": "jsramverk&yso",
+    "license": "ISC",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "jsonwebtoken": "^8.5.1",
+        "morgan": "^1.10.0",
+        "semver": "^7.6.0",
+        "sqlite3": "^5.1.6"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "chai-http": "^4.2.1",
+        "eslint": "^8.57.0",
+        "eslint-plugin-react": "^7.34.0",
+        "javascript-style-guide": "^1.0.1",
+        "mocha": "^5.2.0",
+        "nyc": "^13.3.0"
+    }
+}
