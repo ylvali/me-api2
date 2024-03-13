@@ -1,8 +1,0 @@
-build:
-  nodes:
-    coverage:
-      tests:
-        override:
-          - command: npm test
-          # enable scrutinizer
-          - js-scrutinizer-run
