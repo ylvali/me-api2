@@ -4,3 +4,4 @@ build:
       tests:
         override:
           - command: npm test
+          - js-scrutinizer-run
