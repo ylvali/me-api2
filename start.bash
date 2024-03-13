@@ -6,6 +6,8 @@
 # Set the key 
 # export JWT_SECRET='R_[/_&g2Upsl5I3]uQ]K<2o|J';
 
+echo backend2BTH v2.0
+
 echo node/npm versions
 
 node --version
