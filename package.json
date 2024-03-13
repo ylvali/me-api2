@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "pretest": "bash db/reset_test_db.bash",
-        "test": "nyc --reporter=html --reporter=text mocha 'test/**/*.js'",
+        "test": "nyc --reporter=html --reporter=text --reporter=clover mocha 'test/**/*.js'",
         "prestart": "export JWT_SECRET='R_[/_&g2Upsl5I3]uQ]K<2o|J'",
         "start": "node app.js",
         "eslint": "eslint .",
