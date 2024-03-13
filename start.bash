@@ -11,6 +11,10 @@ echo node/npm versions
 node --version
 npm --version
 
+echo sqlite3 versions
+sqlite3 --version
+
 echo reset the database
 bash db/reset_test_db.bash
 
+# "sqlite3": "^5.1.6"
