@@ -4,9 +4,8 @@
     "description": "jsramverkBTH(course2019Completed2024)",
     "main": "index.js",
     "scripts": {
-        "pretest": "bash db/reset_test_db.bash",
+        "pretest": "bash start.bash",
         "test": "nyc --reporter=html --reporter=text --reporter=clover mocha 'test/**/*.js'",
-        "prestart": "export JWT_SECRET='R_[/_&g2Upsl5I3]uQ]K<2o|J'",
         "start": "node app.js",
         "eslint": "eslint .",
         "clean": "rm -rf node_modules package-lock.json",

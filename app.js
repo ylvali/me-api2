@@ -22,6 +22,10 @@ const port = 8334;
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
+// Check which mode is on (test/production)
+// Set the secret key.
+// This can be changed to do in the CLI 
+// $ export JWT_SECRET='R_[/_&g2Upsl5I3]uQ]K<2o|J'
 console.log('PROCESS ENV: '+process.env.NODE_ENV);
 process.env.JWT_SECRET = 'R_[/_&g2Upsl5I3]uQ]K<2o|J';
 
