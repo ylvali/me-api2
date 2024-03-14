@@ -4,13 +4,13 @@ process.env.NODE_ENV = 'test';
 
 const chai = require('chai');
 const chaiHttp = require('chai-http');
-
 const server = require('../../app.js');
+
 chai.should();
 
 chai.use(chaiHttp);
 
-// THE GET COMMANDS 
+// THE GET COMMANDS
 describe('Gets', () => {
     describe('GET /', () => {
         it('200 HAPPY PATH', (done) => {
@@ -61,7 +61,7 @@ describe('Gets', () => {
             chai.request(server)
                 .get("/token")
                 .end((err, res) => {
-                   // console.log(res);
+                    // console.log(res);
                     res.should.have.status(200);
                     res.body.should.be.an("object");
                     res.body.data.should.be.an("object");
@@ -76,7 +76,7 @@ describe('Gets', () => {
             chai.request(server)
                 .get("/reports/week/3")
                 .end((err, res) => {
-                   // console.log(res);
+                // console.log(res);
                     res.should.have.status(200);
                     res.body.should.be.an("object");
                     res.body.data.should.be.an("object");
@@ -91,7 +91,7 @@ describe('Gets', () => {
             chai.request(server)
                 .get("/reports/week/3")
                 .end((err, res) => {
-                   // console.log(res);
+                    // console.log(res);
                     res.should.have.status(200);
                     res.body.should.be.an("object");
                     res.body.data.should.be.an("object");
@@ -107,7 +107,7 @@ describe('Gets', () => {
             chai.request(server)
                 .get("/error")
                 .end((err, res) => {
-                   // console.log(res);
+                // console.log(res);
                     res.should.have.status(404);
                     done();
                 });
