@@ -110,7 +110,7 @@ describe('POST /users/logout', () => {
                 res.should.have.status(200);
                 res.body.should.be.an("object");
                 res.body.data.should.be.an("object");
-                done();
+                done(); 
             });
     });
 });
