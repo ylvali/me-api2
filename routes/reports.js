@@ -24,7 +24,7 @@ router.get('/all', function(req, res, next) {
     var theSql;
 
     // Call the database with the week nr
-    theSql = "SELECT * FROM 'reports';";
+    theSql = "SELECT * FROM 'reports' ORDER BY title ASC;";
     params = [];
 
     db.all(theSql, params, (err, rows)=> {
@@ -168,10 +168,10 @@ router.post("/add",
         });
     }
 
-    router.post("/delete", 
-    (req, res, next) => checkToken(req, res, next),
+router.post("/delete", 
+    (req, res, next) => checkToken(req, res, next), 
     (req, res) => deleteReport(req, res));
-    // console.log('Delete report');
+    console.log('Delete report');
 
 
     function checkToken(req, res, next) {
@@ -201,7 +201,7 @@ router.post("/add",
     }
 
     function deleteReport(req, res, next) {
-        console.log('Add report');
+        console.log('Delete report');
         console.log(req.body); // Gets the req body
 
         if (!req.body.title) {
