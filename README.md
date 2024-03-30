@@ -1,4 +1,7 @@
-<img src="https://scrutinizer-ci.com/g/ylvali/me-api2/badges/quality-score.png?b=main" alt='quality score'><img src="https://scrutinizer-ci.com/g/ylvali/me-api2/badges/coverage.png?b=main" alt='coverage'><img src="https://scrutinizer-ci.com/g/ylvali/me-api2/badges/build.png?b=main" alt='scrutinizer'><img src="https://app.travis-ci.com/ylvali/me-api2.svg?token=zbGBcfgSpBchF7HShAt4&branch=main" alt='travis pass'>
+[![Build Status](https://app.travis-ci.com/ylvali/me-api2.svg?token=zbGBcfgSpBchF7HShAt4&branch=main)](https://app.travis-ci.com/ylvali/me-api2)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ylvali/me-api2/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/ylvali/me-api2/?branch=main)
+[![Code Coverage](https://scrutinizer-ci.com/g/ylvali/me-api2/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/ylvali/me-api2/?branch=main)
+[![Build Status](https://scrutinizer-ci.com/g/ylvali/me-api2/badges/build.png?b=main)](https://scrutinizer-ci.com/g/ylvali/me-api2/build-status/main)
 
 Backend Me-API 
 BTH Blekinge technical institute
@@ -16,8 +19,8 @@ Backend: http://wwww.me-api.ysojs.se
 Previous edition:
 https://github.com/ylvali/jsramverk2023edition
 
-New edition frontend: https://github.com/ylvali/jsframeworkProject2024BTHv2
-New edition backend: https://github.com/ylvali/jsframeworkProject2024BTH
+New edition frontend: https://github.com/ylvali/frontendBTH
+New edition backend: https://github.com/ylvali/me-api2
 
 
 ## Backend 
